@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- sldiderr -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+        .animated-img {
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 4s linear forwards;
+        }
+
+        .animated-skills {
+            position: relative;
+            opacity: 0;
+            animation: moveleft 4s linear forwards;
+        }
+
+        .animatedcard {
+            position: relative;
+            opacity: 0;
+            animation: fadeInUp 3s linear forwards;
+        }
+
+        @keyframes moveleft {
+            0% {
+                opacity: 0;
+                transform: translateX(25px);
+            }
+
+            25% {
+                opacity: 0.5;
+                transform: translateX(50pxpx);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translateX(75px);
+            }
+
+            75% {
+                opacity: 0.75;
+                transform: translateX(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(150px);
+            }
+
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <title>Muhammad Umair Portfolio</title>
+</head>
+
+<body style="background-color: #2d2e32;">
+    <nav>
+        <div class="nav-bar">
+            <div  style="width: 250px; height: 200px;"><li><img class="animated-img" src="Images/MU-Logo-Removed.png" alt="Header Image"></li></div>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">MU</a></span>
+                    <i class='bx bx-x sidebarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#projectSection">Projects</a></li>
+                    <li><a href="#skillSection">Skills</a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammad-umair07/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/mumair989" target="_blank" rel="noreferrer">Github</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-us-btn">
+                <a href="Muhammad_Umair_Resume.pdf" id="conbtn" target="_blank" rel="noreferrer" download="Muhammad_Umair_Resume.pdf"> Download Resume</a>
+                <i class='bx bx-menu sidebarOpen'></i>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- header start -->
+    <div class="header-section">
+        <div class="left-section">
+        
+            <img class="animated-img" src="images/Removed-Back.png" alt="Header Image">
+        </div>
+        <div class="right-section">
+            
+            <div class="main-text">
+                <h1>
+
+                    Hello<br>
+                    I'm Muhammad <Br>
+                    Umair
+                </h1>
+            </div>
+            <div class="paragraph animatedcard">
+                <p>In the world of code, I found my calling. Every line I write echoes my passion for  <br>
+                    innovation and creativity in software engineering. It's not just a profession; it's my art.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <section class="skill-Section" id="skillSection">
+        
+        <div class="image-line">
+            <ul>
+                <li> <img class="animated-img" src="Images/java.svg" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/Csharp.png" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/python.svg" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/sql.png" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/react.svg" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/javascript.svg" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/git.png" alt="Header Image"></li>
+                <li> <img class="animated-img" src="Images/jira.png" alt="Header Image"></li>
+                
+            </ul>
+        </div>
+    </section>
+    
+
+
+
+
+
+     <div class="container skillsdelt mx-auto pt-16" id="projectSection">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2" id="leftSection">
+                <div class="flex flex-col h-full p-10 left_sec ">
+                    <div class="mb-4 mt-4">
+                        <h4 style="color: #64f4ab;" style=" font-family:monospace;" class="text-lg  font-bold">Project 1
+                        </h4>
+                    </div>
+                    <div class="mb-4 mt-4">
+                        <h2 class="text-5xl text-white font-bold " style=" font-family:monospace;">Recipe Website
+                        </h2>
+                    </div>
+                    <div class="mb-4 mt-4">
+                        <p class="text-white text-lg" style=" font-family:monospace;">Designed a website that allows a user to create an account
+                            where they can share food recipes and see other people’s recipes on their main page. <br>
+                            Developed an elegant user interface with HTML, CSS, and JavaScipt, and utilized the Google Firebase,<br>
+                            Firestore to handle user contact info and sign-in credentials.
+                            Used Java in order to send and display user recipes with the help of Google Cloud Platform DataStore.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 anime" id="rightSection">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-3/4">
+                        <img style="border-radius: 37px;"
+                            src="Images/food.png"
+                            alt="Image" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="container skillsdelt mx-auto pt-16" >
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-1/2" id="leftSection">
+                <div class="flex flex-col h-full p-10 left_sec ">
+                    <div class="mb-4 mt-4">
+                        <h4 style="color: #64f4ab;" style=" font-family:monospace;" class="text-lg  font-bold">Project 2
+                        </h4>
+                    </div>
+                    <div class="mb-4 mt-4">
+                        <h2 class="text-5xl text-white font-bold " style=" font-family:monospace;">Image-Editor
+                        </h2>
+                    </div>
+                    <div class="mb-4 mt-4">
+                        <p class="text-white text-lg" style=" font-family:monospace;">Create a website that allows a user to edit any picture of their choice,<br>
+                        customizing its Brightness, Saturation, Contrast, Blur, and Grayscale.<br>
+                        Established a well design and functional website using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 anime" id="rightSection">
+                <div class="flex justify-center items-center h-full">
+                    <div class="w-3/4">
+                        <img style="border-radius: 37px;"
+                            src="Images/editor.jpg"
+                            alt="Image" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <!-- slider  section  -->
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+
+    <!-- footer section  -->
+
+
+    <div class="footer1">
+
+        <div class="infoo">
+            <h6 style="color: white;">© 2023 All rights reserved - Crafted with passion and creativity by Umair.</h6>
+        </div>
+        
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+
+
+
+        const intersectionCallback = (entries) => {
+            for (const entry of entries) { // Loop over all elements that either enter or exit the view.
+                if (entry.isIntersecting) { // This is true when the element is in view.
+                    entry.target.classList.add('animatedcard'); // Add a class.
+                }
+            }
+        }
+
+        /**
+         * Create a observer and use the instersectionCallback as 
+         * the instructions for what to do when an element enters
+         * or leaves the view
+         */
+        const observer = new IntersectionObserver(intersectionCallback);
+
+        /**
+         * Get all .item elements and loop over them.
+         * Observe each individual item.
+         */
+        const items = document.querySelectorAll('.anime');
+        for (const item of items) {
+            observer.observe(item);
+            console.log("observ");
+        }
+
+    </script>
+
+    <script>
+        $(window).on('scroll', function () {
+            var st = $(this).scrollTop(),
+                vh = $(this).height(),
+                $counter = $('.wrapperx'),
+                ct = $counter.offset().top;
+            if ((st + vh) > ct) {
+                // #counter is in the viewport
+
+                let valueDisplays = document.querySelectorAll(".num");
+                let interval = 100;
+
+                valueDisplays.forEach((valueDisplay) => {
+                    let startValue = 0;
+                    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                    let duration = Math.floor(interval / endValue);
+                    let counter = setInterval(function () {
+                        startValue += 1;
+                        valueDisplay.textContent = startValue;
+                        if (startValue == endValue) {
+                            clearInterval(counter);
+                        }
+                    }, duration);
+                });
+            }
+        })</script>
+
+</body>
+</body>
+
+</html>
